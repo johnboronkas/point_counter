@@ -6,7 +6,7 @@ module Log
   # Log files will roll when they reach 100MB, keeping only 5 logs at a time.
   FileUtils.mkdir_p 'logs'
   @log = Logger.new('logs/app.log', 5, 100 * 1024 * 1024)
-  @log.level = Logger::DEBUG
+  @log.level = Logger::WARN
 
   def self.logger
     @log

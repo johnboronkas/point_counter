@@ -11,7 +11,7 @@ log = Log.logger
 
 get '/api/points/?' do
   log.debug 'get called on /api/points'
-  Logic.all_points
+  JSON.generate(Logic.all_points)
 end
 
 post '/api/points/?' do
@@ -20,5 +20,5 @@ post '/api/points/?' do
   data = JSON.parse request.body.read
   log.debug data.to_s
 
-  Logic.update_points data['team'], data['points']
+  JSON.generate(Logic.update_points(data['team'], data['points']))
 end

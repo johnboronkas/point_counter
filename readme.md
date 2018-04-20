@@ -8,28 +8,21 @@
 
 ```json
 {
-  "teams": [
-    {
-      "team": "Team A",
-      "points": 100
-    },
-    {
-      "team": "Team B",
-      "points": 250
-    }
-  ]
+    "Team A": 50,
+    "Team B": 150
 }
 ```
 
 - POST /api/points
   - Adds or removes a team's points.
   - If the team does not exist, it will be created.
-  - Expected json example:
+  - Returns the updated json (same format as the GET request above)
+  - Expected json input example:
 
 ```json
 {
   "team": "Team A",
-  "points": -5
+  "points": -50
 }
 ```
 
