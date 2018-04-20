@@ -8,13 +8,15 @@
 
 ```json
 {
-  [
-    "team": "Team A",
-    "points": 100
-  ],
-  [
-    "team": "Team B",
-    "points": 250
+  "teams": [
+    {
+      "team": "Team A",
+      "points": 100
+    },
+    {
+      "team": "Team B",
+      "points": 250
+    }
   ]
 }
 ```
