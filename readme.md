@@ -33,9 +33,6 @@
 }
 ```
 
-- DELETE /api/points/{teamName}
-  - Removes the provided teamName and their points.
-
 ## Developer Guide
 
 ### Setup

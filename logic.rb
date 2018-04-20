@@ -1,4 +1,5 @@
 require 'logger'
+require 'fileutils'
 
 # Responsible for the business logic of the endpoints.
 module Logic
@@ -16,6 +17,6 @@ module Logic
   end
 
   def self.update_points(team, adjust_amount)
-    logger.debug "#{team} got #{adjust_amount} points"
+    logger.info "#{team} got #{adjust_amount} points"
   end
 end
