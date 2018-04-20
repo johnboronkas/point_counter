@@ -1,3 +1,4 @@
+require_relative 'log'
 require_relative 'logic'
 
 require 'sinatra'
@@ -6,7 +7,7 @@ require 'json'
 
 # TODO: Dockerize this
 
-log = Logic.logger
+log = Log.logger
 
 get '/api/points/?' do
   log.debug 'get called on /api/points'
